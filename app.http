@@ -1,0 +1,27 @@
+GET http://localhost:4002/todos/?search_q=Play
+###
+
+GET http://localhost:4002/todos/4
+###
+
+POST http://localhost:4002/todos/
+Content-Type:application/json
+
+{
+  "id": 5,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+
+PUT http://localhost:4002/todos/4
+Content-Type:application/json
+
+{
+      "priority": "HIGH"
+    }
+###
+
+DELETE http://localhost:4002/todos/5
+###
